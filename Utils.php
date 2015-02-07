@@ -1,4 +1,7 @@
 <?php
+
+namespace UtilsPHP;
+
 class Utils {
 	public static function escape_data($data) {
 		global $db;
