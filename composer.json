@@ -1,20 +1,12 @@
 {
     "name": "kevin-jones/utils-php",
-    "type": "library",
-    "version": "0.1",
-    "description": "Everyday PHP utility functions for debugging, testing and handy reference",
-    "keywords": ["php", "utility", "debugging", "utils"],
-    "homepage": "https://github.com/kevin-jones/utils-php",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Kevin Jones"
-        }
-    ],
-    "autoload": {
-        "psr-0": { "Utils\\": "/" }
-    },
+    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "UtilsPHP": ""
+        }
     }
 }
