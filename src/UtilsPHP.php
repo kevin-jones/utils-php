@@ -1,8 +1,8 @@
 <?php
 
-namespace UtilsPHP;
+namespace KevinJones\UtilsPHP;
 
-class Utils {
+class UtilsPHP {
 	public static function escape_data($data) {
 		global $db;
 		
