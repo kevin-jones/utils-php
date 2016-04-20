@@ -162,6 +162,15 @@ class Utils {
 			echo 'file does not exist: '.$file.'<br>';
 			return false;
 		}
+		
+	        // Check for and remove BOM
+	        $str = file_get_contents($file);
+	        $bom = pack("CCC", 0xef, 0xbb, 0xbf);
+	        if (0 === strncmp($str, $bom, 3)) {
+	            echo "BOM detected - file is UTF-8\n";
+	            $str = substr($str, 3);
+	            file_put_contents($file, $str);
+	        }
 
 		$result = array(); 
 		$size = filesize($file) + 1; 
